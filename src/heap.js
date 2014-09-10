@@ -35,7 +35,6 @@ module.exports = class Heap {
     var length = this._h.length
 
     if (length === 0) {
-      console.warn('empty heap')
       return undefined
     }
 
@@ -62,6 +61,10 @@ module.exports = class Heap {
     }
 
     return item
+  }
+
+  getLength(){
+    return this._h.length
   }
 
   getParentIndex(i) {
