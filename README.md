@@ -11,17 +11,16 @@ $ npm install -g grunt-cli
 get the repo and install dependencies
 
 ```bash
-$ git clone https://github.com/jaredmcdonald/js-data-structures.git
-$ npm install
+$ git clone https://github.com/jaredmcdonald/js-data-structures.git && npm install
 ```
 
-## building
+## building / testing
 
 ```bash
 $ grunt
 ```
 
-outputs `traceur`-compiled ES5 as `dist/<script-name>.js`
+outputs `traceur`-compiled ES5 as `dist/<script-name>.js` and then runs all tests matching `test/*.js`
 
 ## usage
 
