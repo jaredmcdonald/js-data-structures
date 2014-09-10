@@ -1,0 +1,12 @@
+{
+  "name": "js-data-structures",
+  "description": "data structures in javascript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jared mcdonald <jared.r.mcdonald@gmail.com>",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-traceur": "^0.2.5"
+  }
+}
