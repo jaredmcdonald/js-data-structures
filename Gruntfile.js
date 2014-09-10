@@ -13,11 +13,17 @@ module.exports = function(grunt) {
           dest: 'dist'
         }]
       },
+    },
+    simplemocha : {
+      all : {
+        src : ['test/*.js']
+      }
     }
   })
 
   grunt.loadNpmTasks('grunt-traceur')
+  grunt.loadNpmTasks('grunt-simple-mocha')
 
-  grunt.registerTask('default', ['traceur'])
+  grunt.registerTask('default', ['traceur', 'simplemocha'])
 
 }
