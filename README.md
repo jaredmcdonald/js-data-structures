@@ -2,7 +2,7 @@
 
 ## global dependencies
 
-```
+```bash
 $ npm install -g grunt-cli
 ```
 
