@@ -8,7 +8,7 @@ module.exports = class Heap {
 
 
   // add an item to the heap
-  add(obj) {
+  save(obj) {
 
     // initial index value is array length - 1, or
     // the last spot in the array
@@ -31,7 +31,7 @@ module.exports = class Heap {
   }
 
   // gets first item in heap and removes it
-  get() {
+  extract() {
     var length = this._h.length
 
     if (length === 0) {

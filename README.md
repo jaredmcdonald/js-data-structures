@@ -29,7 +29,7 @@ var Hash = require('./dist/hash.js')
 var h = new Hash()
 
 h.save('key', 'value')
-h.get('key')    // 'value'
+h.retrieve('key')    // 'value'
 h.delete('key') // 'value'
 
 h.get('key')    // undefined
@@ -46,11 +46,11 @@ h.save('key2', 'value2') // ReferenceError
 var Heap = require('./dist/heap.js')
 var h = new Heap()
 
-h.add(2)
-h.add(5)
-h.add(0)
+h.save(2)
+h.save(5)
+h.save(0)
 
-h.get() // 0
+h.extract() // 0
 ```
 pass a custom comparator as the sole argument to the constructor, e.g.,
 
@@ -59,4 +59,10 @@ pass a custom comparator as the sole argument to the constructor, e.g.,
 var h2 = new Heap(function(a, b){
   return a >= b  
 })
+
+h2.save(2)
+h2.save(5)
+h2.save(0)
+
+h2.extract() // 5
 ```
