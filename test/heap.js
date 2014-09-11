@@ -1,5 +1,4 @@
 var assert = require('assert')
-,   sinon = require('sinon')
 ,   expect = require('chai').expect
 ,   Heap = require('../dist/heap.js')
 
@@ -16,7 +15,7 @@ describe('Heap', function(){
   describe('#add()', function(){
 
     it('should add items', function(){
-      
+
       this.h.add(1)
       expect(this.h.getLength()).to.equal(1)
 
