@@ -8,8 +8,6 @@ $ npm install -g grunt-cli
 
 ## setup
 
-get the repo and install dependencies
-
 ```bash
 $ git clone https://github.com/jaredmcdonald/js-data-structures.git && npm install
 ```
@@ -23,6 +21,26 @@ $ grunt
 outputs `traceur`-compiled ES5 as `dist/<script-name>.js` and then runs all tests matching `test/*.js`
 
 ## usage
+
+### `Hash`
+
+```javascript
+var Hash = require('./dist/hash.js')
+var h = new Hash()
+
+h.save('key', 'value')
+h.get('key')    // 'value'
+h.delete('key') // 'value'
+
+h.get('key')    // undefined
+h.delete('key') // undefined
+
+h.save('key2', 'value')
+h.save('key2', 'value2') // ReferenceError
+```
+
+
+### `Heap`
 
 ```javascript
 var Heap = require('./dist/heap.js')
